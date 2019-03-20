@@ -5,6 +5,7 @@
 
 header {
   position: fixed;
+  background-color: white;
   width: 100%;
   height: auto;
   border-bottom: 1px solid black;
@@ -69,33 +70,36 @@ header a {
 
 .main {
   display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 1000px;
+  min-height: 1000px;
   padding-top: 120px;
 }
 
 .column_large {
-  border: 1px solid black;
+  display: flex;
+  flex-flow: column nowrap;
   margin: 5px;
+  margin-left: 0;
   height: auto;
   width: 630px;
-  z-index: 4;
 }
 
 .column_medium {
+  display: flex;
   border: 1px solid black;
   margin: 5px;
   height: auto;
   width: 300px;
-  z-index: 4;
 }
 
 .column_small {
+  display: flex;
   border: 1px solid black;
   margin: 5px;
+  margin-right: 0;
   height: auto;
   width: 240px;
-  z-index: 4;
 }
 
 #img_main {
@@ -115,24 +119,31 @@ header a {
 
 .divided_column {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: auto;
+  margin: 5px 0;
 }
 
 .split {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  width: 300px;
+}
+
+.headline_box, .image_box {
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.story_box {
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 0;
 }
 
 #img_1 {
-  display: flex;
-  align-content: center;
-  background-image: url(../images/img-story-1.png);
-  margin-bottom: 10px;
-  width: 300px;
-  height: 300px;
-}
-
-#img_2 {
   display: flex;
   align-content: center;
   background-image: url(../images/img-story-2.png);
@@ -141,24 +152,35 @@ header a {
   height: 300px;
 }
 
-.image {
+#img_2 {
   display: flex;
-  font-size: 30px;
-  text-align: center;
-  margin: auto 0 auto;
+  align-content: center;
+  background-image: url(../images/img-story-3.png);
+  margin-bottom: 10px;
+  width: 300px;
+  height: 300px;
 }
 
-.image span {
+.image_box span {
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
-  margin: auto auto;
+  margin: auto;
+  text-align: center
 }
 
-.story {
+.headline_box span {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+.story_box span {
   font-family: Georgia;
   font-size: 17px;
+  text-align: justify;
   color: black;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
