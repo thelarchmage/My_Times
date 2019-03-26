@@ -28,15 +28,16 @@ header span {
 #logo {
   display: inline-flex;
   margin: auto 5px;
+  margin-left: 15px;
   padding: 5px;
 }
 
-#logo p {
-  display: flex;
+#logo span {
+  display: inline-flex;
   align-items: center;
+  color: mediumaquamarine;
   margin: auto 5px;
-  margin-left: 15px;
-  padding: 5px;
+  padding: 0px;
 }
 
 #logo_img {
@@ -46,13 +47,7 @@ header span {
   display: inline-block;
   margin: 0;
   padding: 0;
-}
-
-#logo span {
-  display: inline-flex;
-  color: mediumaquamarine;
-  margin: auto 5px;
-  padding: 0;
+  padding-left: 5px;
 }
 
 #head_nav {
@@ -71,7 +66,7 @@ header a {
 .main {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  min-width: 1200px;
   min-height: 1000px;
   padding-top: 120px;
 }
@@ -150,8 +145,8 @@ header a {
 }
 
 #bite_title {
-  display: flex
-  font-family: Georgia;
+  display: flex;
+  font-family: Georgia, serif;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -201,7 +196,7 @@ header a {
   height: 240px;}
 
 .image_box span {
-  font-family: Georgia;
+  font-family: Georgia, serif;
   font-weight: bold;
   font-size: 30px;
   color: white;
@@ -210,13 +205,13 @@ header a {
 }
 
 .headline_box span {
-  font-family: Georgia;
+  font-family: Georgia, serif;
   font-weight: bold;
   font-size: 30px;
 }
 
 .story_box span {
-  font-family: Georgia;
+  font-family: Georgia, serif;
   font-size: 17px;
   text-align: justify;
   color: black;
@@ -228,4 +223,56 @@ header a {
   color: dimgray;
   font-family: Verdana, sans-serif;
   font-size: 12px;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: window;
+  height: 300px;
+  background-color: mediumaquamarine;
+}
+
+#copyright span {
+  display: flex;
+  font-family: Verdana;
+  font-size: 12px;
+  color: black;
+}
+
+footer span {
+  display: inline-flex;
+  margin: 5px 10px;
+}
+
+footer nav {
+  display: inline-flex;
+  margin: 5px;
+}
+
+footer nav span a {
+  font-family: Verdana;
+  font-size: 12px;
+  color: black;
+}
+
+footer.firstline {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer.secondline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
